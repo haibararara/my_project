@@ -1,0 +1,2 @@
+[./temu/src/monitor/expr.c,88,make_token] match rules[11] = "\$[a-z0-9]+" at position 0 with len 3: $sp
+[./temu/src/monitor/expr.c,88,make_token] match rules[12] = "0[xX][0-9a-fA-F]+" at position 0 with len 10: 0x80000000

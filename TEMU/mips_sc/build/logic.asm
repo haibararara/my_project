@@ -1,0 +1,41 @@
+
+build/logic:     file format elf32-tradlittlemips
+build/logic
+
+
+Disassembly of section .text:
+
+80000000 <main>:
+80000000:	3c1d8000 	lui	sp,0x8000
+80000004:	37bd0f00 	ori	sp,sp,0xf00
+80000008:	3c051234 	lui	a1,0x1234
+8000000c:	34a55678 	ori	a1,a1,0x5678
+80000010:	240700ff 	li	a3,255
+80000014:	24080080 	li	t0,128
+80000018:	afa50000 	sw	a1,0(sp)
+8000001c:	8fae0000 	lw	t6,0(sp)
+80000020:	00000000 	nop
+80000024:	15c5000d 	bne	t6,a1,8000005c <fail>
+80000028:	00000000 	nop
+8000002c:	a3a70004 	sb	a3,4(sp)
+80000030:	83af0004 	lb	t7,4(sp)
+80000034:	241100ff 	li	s1,255
+80000038:	15f10008 	bne	t7,s1,8000005c <fail>
+8000003c:	00000000 	nop
+80000040:	24070080 	li	a3,128
+80000044:	a3a70008 	sb	a3,8(sp)
+80000048:	83af0008 	lb	t7,8(sp)
+8000004c:	2411ff80 	li	s1,-128
+80000050:	15f10002 	bne	t7,s1,8000005c <fail>
+80000054:	00000000 	nop
+80000058:	4a000000 	c2	0x0
+
+8000005c <fail>:
+fail():
+8000005c:	4b000000 	c2	0x1000000
+
+Disassembly of section .reginfo:
+
+00000000 <.reginfo>:
+   0:	2002c1a0 	addi	v0,zero,-15968
+	...
