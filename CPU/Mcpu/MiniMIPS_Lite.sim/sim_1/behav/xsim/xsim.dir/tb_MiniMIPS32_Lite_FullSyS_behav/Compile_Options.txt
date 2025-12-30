@@ -1,0 +1,1 @@
+-wto "3e013e88e4d947f2ac71e3f268cb62d3" --incr --debug "typical" --relax --mt "2" -L "dist_mem_gen_v8_0_12" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "tb_MiniMIPS32_Lite_FullSyS_behav" "xil_defaultlib.tb_MiniMIPS32_Lite_FullSyS" "xil_defaultlib.glbl" -log "elaborate.log" 

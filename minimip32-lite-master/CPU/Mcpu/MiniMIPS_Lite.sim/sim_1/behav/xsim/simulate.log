@@ -1,0 +1,11 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+--------------------------------------------------------------
+[                   0]ns
+reference: PC = 0x80000000, wb_rf_wnum = 0x03, wb_rf_wdata = 0x00001010
+--------------------------------------------------------------
+--------------------------------------------------------------
+[                   0]ns
+reference: PC = 0x80000004, wb_rf_wnum = 0x03, wb_rf_wdata = 0x00001010
+--------------------------------------------------------------
